@@ -1,6 +1,6 @@
 //
 // Created by ba101397 on 1/6/2022.
-//
+///
 #include "entetesVersion2.h"
 
 void version2(int grille[10][10], int largeur, int cible, solution *tabSolutions, int *taille) {
