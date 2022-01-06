@@ -12,13 +12,15 @@ void cheking(int grille[10][10],int y,int x, int position, int largeur, solution
 
 
 
-
     //on va droite
-    if (grille[y][x]*grille[y][x+1]+grille[y][x+2]== cible) {
-        tabSolutions[*taille].a = grille[y][x];
-        tabSolutions[*taille].b = grille[y][x+1];
-        tabSolutions[*taille].c = grille[y][x+2];
-        tabSolutions[*taille].cible = cible;
+    if(x+2>largeur){
+        if (grille[y][x]*grille[y][x+1]+grille[y][x+2]== cible) {
+            tabSolutions[*taille].a = grille[y][x];
+            tabSolutions[*taille].b = grille[y][x+1];
+            tabSolutions[*taille].c = grille[y][x+2];
+            tabSolutions[*taille].cible = cible;
+        }
+
     }
     //on va gauche
     if (grille[y][x]*grille[y][x-1]+grille[y][x-2]== cible) {
