@@ -6,33 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ba101397/Documents/GitHub/MatematiC/entetesGestionGrille.h
-
-C:/Users/ba101397/Documents/GitHub/MatematiC/entetesVersion1.h
-
 C:/Users/ba101397/Documents/GitHub/MatematiC/entetesVersion2.h
 
-C:/Users/ba101397/Documents/GitHub/MatematiC/gestionGrille.c
-stdio.h
--
-stdlib.h
--
-time.h
--
-
-C:/Users/ba101397/Documents/GitHub/MatematiC/main.c
-stdio.h
--
-stdlib.h
--
-time.h
--
-math.h
--
-entetesGestionGrille.h
-C:/Users/ba101397/Documents/GitHub/MatematiC/entetesGestionGrille.h
-entetesVersion1.h
-C:/Users/ba101397/Documents/GitHub/MatematiC/entetesVersion1.h
+C:/Users/ba101397/Documents/GitHub/MatematiC/version2.c
 entetesVersion2.h
 C:/Users/ba101397/Documents/GitHub/MatematiC/entetesVersion2.h
 
