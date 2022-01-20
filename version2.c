@@ -44,7 +44,7 @@ void sort(solution *tabSolutions, int taille){
 
 void cheking(int grille[10][10], int y, int x, int *index, int largeur, solution *tabSolutions, int cible) {
     //on va droite
-    if (x + 2 < largeur) {
+    if (x + 2 <= largeur) {
         testsolusion(grille[y][x] , grille[y][x + 1] , grille[y][x + 2],index, tabSolutions,  cible);
     }
     //on va gauche
@@ -53,23 +53,23 @@ void cheking(int grille[10][10], int y, int x, int *index, int largeur, solution
     }
     //on va bas
     if (y - 2 >= 0) {
-        testsolusion(grille[y][x] , grille[y + 1][x] , grille[y + 2][x],index, tabSolutions,  cible);
-    }
-    //on va haut
-    if (y + 2 < largeur) {
         testsolusion(grille[y][x] , grille[y - 1][x] , grille[y - 2][x],index, tabSolutions,  cible);
     }
-    //on va diagonale haut droite
-    if (y + 2 < largeur && x + 2 < largeur) {
-        testsolusion(grille[y][x] , grille[y + 1][x + 1] , grille[y + 2][x + 2],index, tabSolutions,  cible);
+    //on va haut
+    if (y + 2 <= largeur) {
+        testsolusion(grille[y][x] , grille[y + 1][x] , grille[y + 2][x],index, tabSolutions,  cible);
     }
     //on va diagonale haut gauche
-    if (y + 2 < largeur && x - 2 >= 0) {
+    if (y + 2 <= largeur && x - 2 >= 0) {
         testsolusion(grille[y][x] , grille[y + 1][x - 1] , grille[y + 2][x - 2],index, tabSolutions,  cible);
     }
     //on va diagonale bas droite
-    if (y - 2 >= 0 && x + 2 < largeur) {
+    if (y - 2 >= 0 && x + 2 <= largeur) {
         testsolusion(grille[y][x] , grille[y - 1][x + 1] , grille[y - 2][x + 2],index, tabSolutions,  cible);
+    }
+    //on va diagonale haut droite
+    if (y + 2 <= largeur && x + 2 <= largeur) {
+        testsolusion(grille[y][x] , grille[y + 1][x + 1] , grille[y + 2][x + 2],index, tabSolutions,  cible);
     }
     //on va diagonale bas gauche
     if (y - 2 >= 0 && x - 2 >= 0) {
@@ -90,13 +90,12 @@ void testsolusion(int a, int b, int c, int *index, solution *tabSolutions,int ci
     if (b * c - a   == cible) {
         fillstlusion(b, c, a, '-', index, tabSolutions, cible);
     }
-    if (a * c - b == cible) {
-        fillstlusion(a, c, b, '-', index, tabSolutions, cible);
-    }
     if (a * c + b == cible) {
         fillstlusion(a, c, b, '+', index, tabSolutions, cible);
     }
-
+    if (a * c - b == cible) {
+        fillstlusion(a, c, b, '-', index, tabSolutions, cible);
+    }
 
 }
 void fillstlusion(int a, int b, int c,char op, int *index, solution *tabSolutions, int cible){
