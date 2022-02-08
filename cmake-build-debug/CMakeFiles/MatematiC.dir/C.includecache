@@ -6,7 +6,33 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/vc108395/Documents/MatematiC/entetesGestionGrille.h
+
+C:/Users/vc108395/Documents/MatematiC/entetesVersion1.h
+
 C:/Users/vc108395/Documents/MatematiC/entetesVersion2.h
+
+C:/Users/vc108395/Documents/MatematiC/main.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+math.h
+-
+entetesGestionGrille.h
+C:/Users/vc108395/Documents/MatematiC/entetesGestionGrille.h
+entetesVersion1.h
+C:/Users/vc108395/Documents/MatematiC/entetesVersion1.h
+entetesVersion2.h
+C:/Users/vc108395/Documents/MatematiC/entetesVersion2.h
+
+C:/Users/vc108395/Documents/MatematiC/version1.c
+entetesVersion1.h
+C:/Users/vc108395/Documents/MatematiC/entetesVersion1.h
+stdio.h
+-
 
 C:/Users/vc108395/Documents/MatematiC/version2.c
 stdio.h

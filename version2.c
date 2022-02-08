@@ -1,104 +1,86 @@
-//
-// Created by ba101397 on 1/6/2022.
-///
 #include <stdio.h>
 #include "entetesVersion2.h"
 
 void version2(int grille[10][10], int largeur, int cible, solution *tabSolutions, int *taille) {
-//boucle pour parcourir la liste
+    //boucle pour parcourir la liste
     boucle(grille, taille, largeur, tabSolutions,cible);
-/*
-    sort(tabSolutions, *taille);
-*/
+    //Trie par QUICKSORT
     quicksort(tabSolutions, 0,*taille-1);
-    printSolution(tabSolutions, *taille);
+    // Affichage des solutions
+    writeSolution(tabSolutions, *taille);
 
 }
 
 
 void boucle(int grille[10][10], int *index, int largeur, solution *tabSolutions, int cible){
+    // On parcourt la grille et on appelle la fonction qui permet de tester dans les 8 axes
     for(int i = 0; i < largeur; i++){
         for(int j = 0; j< largeur; j++){
-            cheking(grille, i, j, index, largeur, tabSolutions,cible);
-        }
-    }
-}
-
-//sort of structure solution
-void sort(solution *tabSolutions, int taille){
-    int i, j;
-    solution temp;
-    for(i = 0; i < taille; i++){
-        for(j = i+1; j < taille; j++){
-            if(tabSolutions[i].a > tabSolutions[j].a){
-                temp = tabSolutions[i];
-                tabSolutions[i] = tabSolutions[j];
-                tabSolutions[j] = temp;
-            }
+            AxesCheck(grille, i, j, index, largeur, tabSolutions, cible);
         }
     }
 }
 
 
-
-
-void cheking(int grille[10][10], int y, int x, int *index, int largeur, solution *tabSolutions, int cible) {
+void AxesCheck(int grille[10][10], int y, int x, int *index, int largeur, solution *tabSolutions, int cible) {
     //on va droite
     if (x + 2 < largeur) {
-        testsolusion(grille[y][x] , grille[y][x + 1] , grille[y][x + 2],index, tabSolutions,  cible);
+        testSolution(grille[y][x], grille[y][x + 1], grille[y][x + 2], index, tabSolutions, cible);
     }
     //on va gauche
     if (x - 2 >= 0) {
-        testsolusion(grille[y][x] , grille[y][x - 1] , grille[y][x - 2],index, tabSolutions,  cible);
+        testSolution(grille[y][x], grille[y][x - 1], grille[y][x - 2], index, tabSolutions, cible);
     }
     //on va bas
     if (y - 2 >= 0) {
-        testsolusion(grille[y][x] , grille[y - 1][x] , grille[y - 2][x],index, tabSolutions,  cible);
+        testSolution(grille[y][x], grille[y - 1][x], grille[y - 2][x], index, tabSolutions, cible);
     }
     //on va haut
     if (y + 2 < largeur) {
-        testsolusion(grille[y][x] , grille[y + 1][x] , grille[y + 2][x],index, tabSolutions,  cible);
+        testSolution(grille[y][x], grille[y + 1][x], grille[y + 2][x], index, tabSolutions, cible);
     }
     //on va diagonale haut gauche
     if (y + 2 < largeur && x - 2 >= 0) {
-        testsolusion(grille[y][x] , grille[y + 1][x - 1] , grille[y + 2][x - 2],index, tabSolutions,  cible);
+        testSolution(grille[y][x], grille[y + 1][x - 1], grille[y + 2][x - 2], index, tabSolutions, cible);
     }
     //on va diagonale bas droite
     if (y - 2 >= 0 && x + 2 < largeur) {
-        testsolusion(grille[y][x] , grille[y - 1][x + 1] , grille[y - 2][x + 2],index, tabSolutions,  cible);
+        testSolution(grille[y][x], grille[y - 1][x + 1], grille[y - 2][x + 2], index, tabSolutions, cible);
     }
     //on va diagonale haut droite
     if (y + 2 < largeur && x + 2 < largeur) {
-        testsolusion(grille[y][x] , grille[y + 1][x + 1] , grille[y + 2][x + 2],index, tabSolutions,  cible);
+        testSolution(grille[y][x], grille[y + 1][x + 1], grille[y + 2][x + 2], index, tabSolutions, cible);
     }
     //on va diagonale bas gauche
     if (y - 2 >= 0 && x - 2 >= 0) {
-        testsolusion(grille[y][x] , grille[y - 1][x - 1] , grille[y - 2][x - 2],index, tabSolutions,  cible);
+        testSolution(grille[y][x], grille[y - 1][x - 1], grille[y - 2][x - 2], index, tabSolutions, cible);
     }
 }
 
-void testsolusion(int a, int b, int c, int *index, solution *tabSolutions,int cible) {
+void testSolution(int a, int b, int c, int *index, solution *tabSolutions, int cible) {
+    // Teste toutes les solutions si vrai alors demande de stockage
     if (a * b + c == cible) {
-        fillstlusion(a, b, c,'+', index, tabSolutions, cible);
+        stockSolution(a, b, c, '+', index, tabSolutions, cible);
     }
     if (a * b - c == cible) {
-        fillstlusion(a, b, c, '-', index, tabSolutions, cible);
+        stockSolution(a, b, c, '-', index, tabSolutions, cible);
     }
     if (b * c + a  == cible) {
-        fillstlusion(b, c, a, '+', index, tabSolutions, cible);
+        stockSolution(b, c, a, '+', index, tabSolutions, cible);
     }
     if (b * c - a   == cible) {
-        fillstlusion(b, c, a, '-', index, tabSolutions, cible);
+        stockSolution(b, c, a, '-', index, tabSolutions, cible);
     }
     if (a * c + b == cible) {
-        fillstlusion(a, c, b, '+', index, tabSolutions, cible);
+        stockSolution(a, c, b, '+', index, tabSolutions, cible);
     }
     if (a * c - b == cible) {
-        fillstlusion(a, c, b, '-', index, tabSolutions, cible);
+        stockSolution(a, c, b, '-', index, tabSolutions, cible);
     }
 
 }
-void fillstlusion(int a, int b, int c,char op, int *index, solution *tabSolutions, int cible){
+void stockSolution(int a, int b, int c, char op, int *index, solution *tabSolutions, int cible){
+    // stock la soltuion dans la liste
     tabSolutions[*index].a = a;
     tabSolutions[*index].b = b;
     tabSolutions[*index].c = c;
@@ -107,15 +89,16 @@ void fillstlusion(int a, int b, int c,char op, int *index, solution *tabSolution
     *index = *index + 1;
 }
 
-void printSolution(solution *tabSolutions, int taille) {
+void writeSolution(solution *tabSolutions, int taille) {
+    // Ecrit les solution dals la console
     int i;
     for (i = 0; i < taille; i++) {
         printf("%d x %d %c %d = %d\n", tabSolutions[i].a, tabSolutions[i].b, tabSolutions[i].op, tabSolutions[i].c, tabSolutions[i].cible);
     }
 }
 
-//make a quick sort for a struct
 void quicksort(solution *tabSolutions, int debut, int fin) {
+    // Le quicksort pour trie rapidement la liste
     int i, j, pivot;
     solution temp;
     if (debut < fin) {
