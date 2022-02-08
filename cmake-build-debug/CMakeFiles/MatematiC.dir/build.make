@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\ba101397\Documents\CLion\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\vc108395\Documents\clion\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\ba101397\Documents\CLion\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\vc108395\Documents\clion\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ba101397\Documents\GitHub\MatematiC
+CMAKE_SOURCE_DIR = C:\Users\vc108395\Documents\MatematiC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\vc108395\Documents\MatematiC\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MatematiC.dir/depend.make
@@ -68,58 +68,58 @@ include CMakeFiles/MatematiC.dir/flags.make
 CMakeFiles/MatematiC.dir/gestionGrille.c.obj: CMakeFiles/MatematiC.dir/flags.make
 CMakeFiles/MatematiC.dir/gestionGrille.c.obj: CMakeFiles/MatematiC.dir/includes_C.rsp
 CMakeFiles/MatematiC.dir/gestionGrille.c.obj: ../gestionGrille.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/MatematiC.dir/gestionGrille.c.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MatematiC.dir\gestionGrille.c.obj -c C:\Users\ba101397\Documents\GitHub\MatematiC\gestionGrille.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vc108395\Documents\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/MatematiC.dir/gestionGrille.c.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MatematiC.dir\gestionGrille.c.obj -c C:\Users\vc108395\Documents\MatematiC\gestionGrille.c
 
 CMakeFiles/MatematiC.dir/gestionGrille.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MatematiC.dir/gestionGrille.c.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ba101397\Documents\GitHub\MatematiC\gestionGrille.c > CMakeFiles\MatematiC.dir\gestionGrille.c.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\vc108395\Documents\MatematiC\gestionGrille.c > CMakeFiles\MatematiC.dir\gestionGrille.c.i
 
 CMakeFiles/MatematiC.dir/gestionGrille.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MatematiC.dir/gestionGrille.c.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ba101397\Documents\GitHub\MatematiC\gestionGrille.c -o CMakeFiles\MatematiC.dir\gestionGrille.c.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\vc108395\Documents\MatematiC\gestionGrille.c -o CMakeFiles\MatematiC.dir\gestionGrille.c.s
 
 CMakeFiles/MatematiC.dir/main.c.obj: CMakeFiles/MatematiC.dir/flags.make
 CMakeFiles/MatematiC.dir/main.c.obj: CMakeFiles/MatematiC.dir/includes_C.rsp
 CMakeFiles/MatematiC.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MatematiC.dir/main.c.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MatematiC.dir\main.c.obj -c C:\Users\ba101397\Documents\GitHub\MatematiC\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vc108395\Documents\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MatematiC.dir/main.c.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MatematiC.dir\main.c.obj -c C:\Users\vc108395\Documents\MatematiC\main.c
 
 CMakeFiles/MatematiC.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MatematiC.dir/main.c.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ba101397\Documents\GitHub\MatematiC\main.c > CMakeFiles\MatematiC.dir\main.c.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\vc108395\Documents\MatematiC\main.c > CMakeFiles\MatematiC.dir\main.c.i
 
 CMakeFiles/MatematiC.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MatematiC.dir/main.c.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ba101397\Documents\GitHub\MatematiC\main.c -o CMakeFiles\MatematiC.dir\main.c.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\vc108395\Documents\MatematiC\main.c -o CMakeFiles\MatematiC.dir\main.c.s
 
 CMakeFiles/MatematiC.dir/version1.c.obj: CMakeFiles/MatematiC.dir/flags.make
 CMakeFiles/MatematiC.dir/version1.c.obj: CMakeFiles/MatematiC.dir/includes_C.rsp
 CMakeFiles/MatematiC.dir/version1.c.obj: ../version1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/MatematiC.dir/version1.c.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MatematiC.dir\version1.c.obj -c C:\Users\ba101397\Documents\GitHub\MatematiC\version1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vc108395\Documents\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/MatematiC.dir/version1.c.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MatematiC.dir\version1.c.obj -c C:\Users\vc108395\Documents\MatematiC\version1.c
 
 CMakeFiles/MatematiC.dir/version1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MatematiC.dir/version1.c.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ba101397\Documents\GitHub\MatematiC\version1.c > CMakeFiles\MatematiC.dir\version1.c.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\vc108395\Documents\MatematiC\version1.c > CMakeFiles\MatematiC.dir\version1.c.i
 
 CMakeFiles/MatematiC.dir/version1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MatematiC.dir/version1.c.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ba101397\Documents\GitHub\MatematiC\version1.c -o CMakeFiles\MatematiC.dir\version1.c.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\vc108395\Documents\MatematiC\version1.c -o CMakeFiles\MatematiC.dir\version1.c.s
 
 CMakeFiles/MatematiC.dir/version2.c.obj: CMakeFiles/MatematiC.dir/flags.make
 CMakeFiles/MatematiC.dir/version2.c.obj: CMakeFiles/MatematiC.dir/includes_C.rsp
 CMakeFiles/MatematiC.dir/version2.c.obj: ../version2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MatematiC.dir/version2.c.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MatematiC.dir\version2.c.obj -c C:\Users\ba101397\Documents\GitHub\MatematiC\version2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vc108395\Documents\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MatematiC.dir/version2.c.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MatematiC.dir\version2.c.obj -c C:\Users\vc108395\Documents\MatematiC\version2.c
 
 CMakeFiles/MatematiC.dir/version2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MatematiC.dir/version2.c.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ba101397\Documents\GitHub\MatematiC\version2.c > CMakeFiles\MatematiC.dir\version2.c.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\vc108395\Documents\MatematiC\version2.c > CMakeFiles\MatematiC.dir\version2.c.i
 
 CMakeFiles/MatematiC.dir/version2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MatematiC.dir/version2.c.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ba101397\Documents\GitHub\MatematiC\version2.c -o CMakeFiles\MatematiC.dir\version2.c.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\vc108395\Documents\MatematiC\version2.c -o CMakeFiles\MatematiC.dir\version2.c.s
 
 # Object files for target MatematiC
 MatematiC_OBJECTS = \
@@ -139,7 +139,7 @@ MatematiC.exe: CMakeFiles/MatematiC.dir/build.make
 MatematiC.exe: CMakeFiles/MatematiC.dir/linklibs.rsp
 MatematiC.exe: CMakeFiles/MatematiC.dir/objects1.rsp
 MatematiC.exe: CMakeFiles/MatematiC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable MatematiC.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\vc108395\Documents\MatematiC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable MatematiC.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MatematiC.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,6 +151,6 @@ CMakeFiles/MatematiC.dir/clean:
 .PHONY : CMakeFiles/MatematiC.dir/clean
 
 CMakeFiles/MatematiC.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ba101397\Documents\GitHub\MatematiC C:\Users\ba101397\Documents\GitHub\MatematiC C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug C:\Users\ba101397\Documents\GitHub\MatematiC\cmake-build-debug\CMakeFiles\MatematiC.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\vc108395\Documents\MatematiC C:\Users\vc108395\Documents\MatematiC C:\Users\vc108395\Documents\MatematiC\cmake-build-debug C:\Users\vc108395\Documents\MatematiC\cmake-build-debug C:\Users\vc108395\Documents\MatematiC\cmake-build-debug\CMakeFiles\MatematiC.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MatematiC.dir/depend
 

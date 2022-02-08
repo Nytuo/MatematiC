@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/ba101397/Documents/GitHub/MatematiC/gestionGrille.c" "C:/Users/ba101397/Documents/GitHub/MatematiC/cmake-build-debug/CMakeFiles/MatematiC.dir/gestionGrille.c.obj"
-  "C:/Users/ba101397/Documents/GitHub/MatematiC/main.c" "C:/Users/ba101397/Documents/GitHub/MatematiC/cmake-build-debug/CMakeFiles/MatematiC.dir/main.c.obj"
-  "C:/Users/ba101397/Documents/GitHub/MatematiC/version1.c" "C:/Users/ba101397/Documents/GitHub/MatematiC/cmake-build-debug/CMakeFiles/MatematiC.dir/version1.c.obj"
-  "C:/Users/ba101397/Documents/GitHub/MatematiC/version2.c" "C:/Users/ba101397/Documents/GitHub/MatematiC/cmake-build-debug/CMakeFiles/MatematiC.dir/version2.c.obj"
+  "C:/Users/vc108395/Documents/MatematiC/gestionGrille.c" "C:/Users/vc108395/Documents/MatematiC/cmake-build-debug/CMakeFiles/MatematiC.dir/gestionGrille.c.obj"
+  "C:/Users/vc108395/Documents/MatematiC/main.c" "C:/Users/vc108395/Documents/MatematiC/cmake-build-debug/CMakeFiles/MatematiC.dir/main.c.obj"
+  "C:/Users/vc108395/Documents/MatematiC/version1.c" "C:/Users/vc108395/Documents/MatematiC/cmake-build-debug/CMakeFiles/MatematiC.dir/version1.c.obj"
+  "C:/Users/vc108395/Documents/MatematiC/version2.c" "C:/Users/vc108395/Documents/MatematiC/cmake-build-debug/CMakeFiles/MatematiC.dir/version2.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

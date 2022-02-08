@@ -56,19 +56,19 @@ void cheking(int grille[10][10], int y, int x, int *index, int largeur, solution
         testsolusion(grille[y][x] , grille[y - 1][x] , grille[y - 2][x],index, tabSolutions,  cible);
     }
     //on va haut
-    if (y + 2 <= largeur) {
+    if (y + 2 < largeur) {
         testsolusion(grille[y][x] , grille[y + 1][x] , grille[y + 2][x],index, tabSolutions,  cible);
     }
     //on va diagonale haut gauche
-    if (y + 2 <= largeur && x - 2 >= 0) {
+    if (y + 2 < largeur && x - 2 >= 0) {
         testsolusion(grille[y][x] , grille[y + 1][x - 1] , grille[y + 2][x - 2],index, tabSolutions,  cible);
     }
     //on va diagonale bas droite
-    if (y - 2 >= 0 && x + 2 <= largeur) {
+    if (y - 2 >= 0 && x + 2 < largeur) {
         testsolusion(grille[y][x] , grille[y - 1][x + 1] , grille[y - 2][x + 2],index, tabSolutions,  cible);
     }
     //on va diagonale haut droite
-    if (y + 2 <= largeur && x + 2 <= largeur) {
+    if (y + 2 < largeur && x + 2 < largeur) {
         testsolusion(grille[y][x] , grille[y + 1][x + 1] , grille[y + 2][x + 2],index, tabSolutions,  cible);
     }
     //on va diagonale bas gauche
