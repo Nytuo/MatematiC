@@ -44,7 +44,7 @@ void sort(solution *tabSolutions, int taille){
 
 void cheking(int grille[10][10], int y, int x, int *index, int largeur, solution *tabSolutions, int cible) {
     //on va droite
-    if (x + 2 <= largeur) {
+    if (x + 2 < largeur) {
         testsolusion(grille[y][x] , grille[y][x + 1] , grille[y][x + 2],index, tabSolutions,  cible);
     }
     //on va gauche
